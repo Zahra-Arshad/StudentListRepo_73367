@@ -13,6 +13,7 @@ public class Student {
 
     private String name;
     private int ID;
+    private String DoB;
 
     public Student() {
         name = "Name Not Set";
@@ -25,7 +26,7 @@ public class Student {
     }
 
     public void setName(String givenName) {
-        this.name = givenName;
+        name = givenName;
     }
 
     public String getName() {
@@ -38,5 +39,19 @@ public class Student {
 
     public int getID() {
         return ID;
+    }
+
+    /**
+     * @return the DoB
+     */
+    public String getDoB() {
+        return DoB;
+    }
+
+    /**
+     * @param DoB the DoB to set
+     */
+    public void setDoB(String DoB) {
+        this.DoB = DoB;
     }
 }
